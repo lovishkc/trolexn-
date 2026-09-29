@@ -8,7 +8,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="gym-freak-logo.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230B0B0C'/><path d='M8 13v6M12 10v12M20 10v12M24 13v6M12 16h8' stroke='%23C8FF3D' stroke-width='2.4' stroke-linecap='round'/></svg>">
 <script>
 tailwind.config = {
   theme: {
@@ -104,7 +104,10 @@ tailwind.config = {
 
     <!-- Logo -->
     <a href="#" onclick="goHome();return false;" class="flex items-center gap-2.5 group">
-      <img src="gym-freak-logo.png" alt="GYM FREAK ESSENTIAL" class="h-12 w-auto max-w-[190px] object-contain group-hover:scale-[1.02] transition-transform">
+      <span class="w-9 h-9 rounded-xl bg-vault-800 border border-white/10 flex items-center justify-center group-hover:border-lime/60 transition-colors">
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="none"><path d="M8 13v6M12 10v12M20 10v12M24 13v6M12 16h8" stroke="#C8FF3D" stroke-width="2.6" stroke-linecap="round"/></svg>
+      </span>
+      <span class="font-display text-2xl tracking-wider pt-0.5">GYM FREAK<span class="text-lime">ESSENTIAL</span></span>
     </a>
 
     <!-- Desktop nav -->
@@ -142,7 +145,7 @@ tailwind.config = {
   <div class="absolute inset-0 bg-black/70 overlay-fade" onclick="closeMobileMenu()"></div>
   <div class="absolute left-0 top-0 h-full w-[85%] max-w-sm bg-vault-900 border-r border-white/10 p-6 drawer" style="transform:translateX(-100%)" id="mobileMenuPanel">
     <div class="flex items-center justify-between mb-8">
-      <img src="gym-freak-logo.png" alt="GYM FREAK ESSENTIAL" class="h-12 w-auto max-w-[190px] object-contain">
+      <span class="font-display text-2xl">IRON<span class="text-lime">VAULT</span></span>
       <button onclick="closeMobileMenu()" class="p-2 text-white/70 hover:text-lime"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
     <nav class="flex flex-col gap-1 text-lg font-bold tracking-widest">
@@ -421,15 +424,9 @@ tailwind.config = {
         <span class="w-9 h-9 rounded-xl bg-vault-800 border border-white/10 flex items-center justify-center">
           <svg width="20" height="20" viewBox="0 0 32 32" fill="none"><path d="M8 13v6M12 10v12M20 10v12M24 13v6M12 16h8" stroke="#C8FF3D" stroke-width="2.6" stroke-linecap="round"/></svg>
         </span>
-        <img src="gym-freak-logo.png" alt="GYM FREAK ESSENTIAL" class="h-12 w-auto max-w-[190px] object-contain">
+        <span class="font-display text-2xl">IRON<span class="text-lime">VAULT</span></span>
       </div>
       <p class="text-white/45 text-sm max-w-xs">Premium gym accessories engineered for your everyday grind. Built for the grind — delivered across Nepal.</p>
-      <div class="mt-5 space-y-2 text-sm text-white/55">
-        <p><span class="text-white/80 font-semibold">Name:</span> Lovish KC</p>
-        <p><span class="text-white/80 font-semibold">Phone:</span> <a href="tel:9843311108" class="hover:text-lime transition-colors">9843311108</a></p>
-        <p><span class="text-white/80 font-semibold">Email:</span> <a href="mailto:gymfreak2026@gmail.com" class="hover:text-lime transition-colors">gymfreak2026@gmail.com</a></p>
-        <p><span class="text-white/80 font-semibold">Address:</span> Dhapasi, Kathmandu</p>
-      </div>
       <div class="flex gap-3 mt-6">
         <a href="#" class="w-10 h-10 rounded-lg bg-vault-800 border border-white/10 flex items-center justify-center text-white/60 hover:text-lime hover:border-lime/50 transition-colors" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
         <a href="#" class="w-10 h-10 rounded-lg bg-vault-800 border border-white/10 flex items-center justify-center text-white/60 hover:text-lime hover:border-lime/50 transition-colors" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5v4h3v7h4v-7h3l1-4h-4V7.5A1.5 1.5 0 0 1 13.5 6H15z"/></svg></a>
@@ -453,9 +450,7 @@ tailwind.config = {
     <div>
       <p class="text-xs font-extrabold tracking-[.2em] text-white/80 mb-4">HELP</p>
       <ul class="space-y-2.5 text-sm text-white/45">
-        <li><a href="tel:9843311108" class="hover:text-lime transition-colors">9843311108</a></li>
-        <li><a href="mailto:gymfreak2026@gmail.com" class="hover:text-lime transition-colors">Email Us</a></li>
-        <li><span class="text-white/35">Dhapasi, Kathmandu</span></li>
+        <li><a href="#" class="hover:text-lime transition-colors">Contact Us</a></li>
         <li><a href="#" class="hover:text-lime transition-colors">Shipping</a></li>
         <li><a href="#" class="hover:text-lime transition-colors">Returns</a></li>
         <li><a href="#" class="hover:text-lime transition-colors">FAQs</a></li>
@@ -470,15 +465,6 @@ tailwind.config = {
         <li><a href="#" class="hover:text-lime transition-colors">Terms & Conditions</a></li>
       </ul>
     </div>
-  </div>
-  <div class="border-t border-white/5 py-4 px-4 sm:px-6 text-center text-xs text-white/40">
-    <span class="text-white/70 font-semibold">Lovish KC</span>
-    <span class="mx-2">•</span>
-    <a href="tel:9843311108" class="hover:text-lime transition-colors">9843311108</a>
-    <span class="mx-2">•</span>
-    <a href="mailto:gymfreak2026@gmail.com" class="hover:text-lime transition-colors">gymfreak2026@gmail.com</a>
-    <span class="mx-2">•</span>
-    <span>Dhapasi, Kathmandu</span>
   </div>
   <div class="border-t border-white/5 py-5 text-center text-[11px] tracking-[.2em] text-white/30 font-bold">
     © 2026 GYM FREAK ESSENTIAL. ALL RIGHTS RESERVED.
